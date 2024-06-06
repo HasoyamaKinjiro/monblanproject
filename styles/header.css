@@ -1,0 +1,133 @@
+.header {
+    width: 100%;
+    height: 172px;
+    position: relative;
+
+    z-index: 10;
+
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12), inset 0 12px 24px 0 rgba(0, 0, 0, 0.12);
+    background: rgba(255, 255, 255, 0.67);
+}
+
+.logo-monblan {
+    position: absolute;
+    top: 6px;
+    left: 353px;
+}
+
+.header__main {
+    position: absolute;
+    top: 31px;
+    left: 581px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title-block__h2 {
+    font-family: MontserratMedium;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.title-block__event {
+    width: 135px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid rgb(61, 142, 218);
+    border-radius: 2px;
+
+    color: rgb(61, 142, 218);
+    font-family: RobotoRegular;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+
+    cursor: pointer;
+}
+
+.stats-block {
+    display: flex;
+    gap: 22px;
+
+    font-family: RobotoRegular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.stats-block__num {
+    font-family: RobotoBold;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .logo-monblan {
+        position: unset;
+    }
+
+    .header__main {
+        position: unset;
+    }
+}
+
+@media (max-width: 850px) {
+    .header {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        width: 400px;
+    }
+
+    .logo-monblan {
+        display: none;
+    }
+}
+
+@media (max-width: 400px)  {
+    .header {
+        width: 350px;
+    }
+
+    .header__main {
+        width: 350px;
+    }
+
+    .stats-block {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

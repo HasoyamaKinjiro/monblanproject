@@ -1,0 +1,132 @@
+.date-block {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.date-block__title {
+    font-family: RobotoMedium;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.date-block__sub {
+    display: flex;
+    gap: 22px;
+}
+
+.datepicker {
+    width: 201px;
+    height: 211px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    border: 1px solid rgb(210, 209, 210);
+    border-radius: 5px;
+    background: white;
+
+    color: rgb(51, 52, 55);
+    font-family: RobotoBold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.datepicker table th {
+    width: 23px;
+    height: 23px;
+    min-width: 23px;
+    max-width: 23px;
+}
+
+.datepicker table tr td {
+    width: 23px;
+    height: 23px;
+
+    font-family: RobotoRegular;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active:hover{
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3D8EDA), to(#3D8EDA));
+    background-color: #3D8EDA;
+}
+
+.table-condensed {
+    width: 183px;
+    height: 204px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker-form {
+    display: flex;
+}
+
+.datepicker-input {
+    width: 107px;
+    height: 28px;
+
+    padding-left: 8px;
+
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px 0 0 4px;
+
+    color: rgb(99, 98, 100);
+    font-family: RobotoRegular;
+    font-size: 13px;
+    line-height: 15px;
+
+    outline: none;
+}
+
+.icon-plus {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid rgb(222, 222, 222);
+    border-right: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+
+    background: #EBEBEB;
+}
+
+.icon-calendar {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid rgb(222, 222, 222);
+    border-right: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+    border-radius: 0 4px 4px 0;
+
+    background: #EBEBEB;
+}
+
+@media (max-width: 400px) {
+    .date-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .date-block__sub {
+        flex-direction: column;
+    }
+}
