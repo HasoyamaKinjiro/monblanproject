@@ -1,9 +1,9 @@
 $(function() {
-    $('.syda-button__to').on('click', function() {
+    $('.date-button__to').on('click', function() {
         $('.datepicker-group__to').datepicker('show');
     });
 
-    $('.syda-button__from').on('click', function() {
+    $('.date-button__from').on('click', function() {
         $('.datepicker-group__from').datepicker('show');
     });
 
